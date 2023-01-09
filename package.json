@@ -1,0 +1,34 @@
+{
+  "name": "text-to-image",
+  "version": "1.0.0",
+  "description": "Text to Image generator website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "client": "cd frontend && npm run dev",
+    "server": "cd backend && npm run dev",
+    "dev": "concurrently -p \"[{name}]\" -n \"SERVER,CLIENT,LESS\" -c \"bgGreen.bold,bgMagenta.bold,bgBlue.bold\" \"npm run server\" \"npm run client\" "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dev-sujan/text-to-image.git"
+  },
+  "keywords": [
+    "react",
+    "express",
+    "node"
+  ],
+  "author": "Sujan Maji",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dev-sujan/text-to-image/issues"
+  },
+  "homepage": "https://github.com/dev-sujan/text-to-image#readme",
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "yarn": "^1.22.19"
+  }
+}
