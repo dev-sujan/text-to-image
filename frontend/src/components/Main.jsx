@@ -32,7 +32,7 @@ function Main() {
 
   // This function sends a POST request to the API with the prompt and selectedOption states as parameters, then updates the imgUrl state with the response
   const getImage = async (prompt, size) => {
-    const API_URL = "http://localhost:5000/api/image";
+    const API_URL = import.meta.env.VITE_API_URL;
 
     // This sets the loading state to true while the request is being made
     setIsLoading(true);
